@@ -10,6 +10,7 @@ from typing import Dict, Any, Optional
 from groq import Groq
 from datetime import datetime
 import json
+from app.core.config import settings
 
 logger = logging.getLogger(__name__)
 
@@ -86,9 +87,9 @@ class SchengenFormFillingService:
     def __init__(self):
         """Initialize Groq client"""
         try:
-            api_key = "***REMOVED***"
+            api_key = settings.groq_api_key
             if not api_key:
-                logger.warning("GROQ_API_KEY not found in environment variables")
+                logger.warning("GROQ_API_KEY not found in settings")
                 self.client = None
             else:
                 self.client = Groq(api_key=api_key)
