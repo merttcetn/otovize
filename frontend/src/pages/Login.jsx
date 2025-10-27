@@ -14,6 +14,7 @@ import {
   Security,
   Public
 } from '@mui/icons-material';
+import otovizePng from '../assets/otovize.png';
 
 /**
  * Login Page Component
@@ -145,9 +146,17 @@ const Login = () => {
                 }}>
                   otovize
                 </span>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style={{ marginTop: '0.5rem' }}>
-                  <path d="M2.5 19L10 12L2.5 5M12.5 19L20 12L12.5 5" stroke="#1a1a1a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+                <img 
+                   src={otovizePng} 
+                   alt="Otovize" 
+                   style={{
+                     width: '72px',
+                     height: '72px',
+                     marginTop: '0.5rem',
+                     marginLeft: '-0.5rem',
+                     filter: 'brightness(0) saturate(100%) invert(17%) sepia(71%) saturate(1088%) hue-rotate(137deg) brightness(93%) contrast(97%)',
+                   }}
+                 />
               </motion.div>
             </div>
 

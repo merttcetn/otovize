@@ -1,80 +1,80 @@
-# Oto Vize App - 2025 YTU Meta Hackathon Birincisi!
+# Otovize App - 2025 YTU Meta Llama Hackathon
 
-## 🧭 1. Project Description and Purpose  
+## 🧭 1. Project Description and Purpose
 
-**Oto Vize**, vize başvuru sürecini modernleştiren yapay zeka destekli bir otomasyon platformudur.  
-Geleneksel, karmaşık ve stresli vize işlemlerini basitleştirerek kullanıcıların tüm süreci **tek bir dijital ortamda**, hatasız ve hızlı şekilde tamamlamasına olanak tanır.  
+**Oto Vize** is an AI-powered automation platform that modernizes the visa application process.
+It simplifies traditional, complex, and stressful visa procedures, allowing users to complete the entire process **in a single digital environment**, error-free and quickly.
 
-**Amaç:**  
-- Form doldurma, belge kontrolü ve sosyal medya inceleme adımlarını otomatikleştirmek  
-- Kişiye özel belge listesi, hatasız form doldurma ve niyet mektubu oluşturma süreçlerini hızlandırmak  
-- Kullanıcıların başvuru kabul oranını artırmak ve zamandan tasarruf ettirmek  
+**Purpose:**
+- Automate form filling, document verification, and social media review steps
+- Accelerate personalized document checklist creation, error-free form filling, and letter of intent generation processes
+- Increase users' application acceptance rate and save time  
 
 ---
 
 ## ⚙️ 2. Installation Instructions  
 
-### Prerequisites  
-- Python 3.10+  
-- Node.js 18+  
-- npm veya yarn  
-- Firebase hesabı  
-- Google Cloud hesabı (AI model dağıtımı için)
+### Prerequisites
+- Python 3.10+
+- Node.js 18+
+- npm or yarn
+- Firebase account
+- Google Cloud account (for AI model deployment)
 
 ### Steps  
 
-1. **Repository’yi klonlayın:**  
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Metafor-Visa-Automation/llama-hackathon.git
    cd llama-hackathon
    ```
 
-2. **Backend kurulumu:**  
+2. **Backend setup:**
    ```bash
    cd backend
    python -m venv env
-   source env/bin/activate  # (Windows için: env\Scripts\activate)
+   source env/bin/activate  # (For Windows: env\Scripts\activate)
    pip install -r requirements.txt
    uvicorn main:app --reload
    ```
 
-3. **Frontend kurulumu:**  
+3. **Frontend setup:**
    ```bash
    cd ../frontend
    npm install
    npm run dev
    ```
 
-4. **Ortam değişkenlerini ekleyin (.env):**  
+4. **Add environment variables (.env):**
    ```env
    FIREBASE_API_KEY=...
    GCP_API_KEY=...
    OLLAMA_MODEL=llama3
    ```
 
-5. **Uygulamayı tarayıcıda açın:**  
+5. **Open the application in browser:**
    ```
    http://localhost:5173
    ```
 
 ---
 
-## 💻 3. Usage Guide  
+## 💻 3. Usage Guide
 
-### 🔹 Form Otomasyonu  
-Kullanıcıdan alınan temel bilgiler, DS-160 veya Schengen gibi resmi formlara otomatik olarak işlenir.
+### 🔹 Form Automation
+Basic information collected from the user is automatically processed into official forms such as DS-160 or Schengen.
 
-### 🔹 Belge Kontrol Listesi  
-Kullanıcının profiline (öğrenci, çalışan, aile bireyi vb.) göre kişiselleştirilmiş bir belge listesi oluşturulur.
+### 🔹 Document Checklist
+A personalized document list is created according to the user's profile (student, employee, family member, etc.).
 
-### 🔹 Belge OCR & Doğrulama  
-Yüklenen belgelerde tarih, imza veya tutarsız veri hataları otomatik olarak tespit edilir.
+### 🔹 Document OCR & Verification
+Date, signature, or inconsistent data errors in uploaded documents are automatically detected.
 
-### 🔹 Niyet Mektubu Üretimi  
-Kullanıcının profil ve seyahat planına göre profesyonel bir niyet mektubu taslağı oluşturulur.
+### 🔹 Letter of Intent Generation
+A professional letter of intent draft is created based on the user's profile and travel plan.
 
-### 🔹 Sosyal Medya Analizi  
-Yapay zeka, başvuruyla çelişebilecek veya riskli sosyal medya içeriklerini tespit eder ve çözüm önerileri sunar.
+### 🔹 Social Media Analysis
+AI detects risky or contradictory social media content that may conflict with the application and provides solution suggestions.
 
 ---
 ## 💻 Demo Photos
@@ -86,9 +86,9 @@ Yapay zeka, başvuruyla çelişebilecek veya riskli sosyal medya içeriklerini t
 
 
 ---
-## 🧠 4. Technologies Used  
+## 🧠 4. Technologies Used
 
-| Katman | Teknoloji |
+| Layer | Technology |
 |--------|------------|
 | **Frontend** | React, Tailwind CSS |
 | **Backend** | FastAPI (Python) |
@@ -108,4 +108,4 @@ Yapay zeka, başvuruyla çelişebilecek veya riskli sosyal medya içeriklerini t
 # App Diagram
 ![WhatsApp Görsel 2025-10-26 saat 11 31 31_b3b71f04](https://github.com/user-attachments/assets/906467a0-4d8d-4dcd-a6fb-5ba9375f32b8)
 
-# Teknik readme dosyaları için frontend/readme, AI/readme, backend/readme dosyalarına bakabilirsiniz.
+# For technical readme files, please refer to frontend/readme, AI/readme, and backend/readme files.
