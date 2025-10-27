@@ -1,4 +1,4 @@
-# Otovize App - 2025 YTU Meta Llama Hackathon
+# Otovize - 2025 YTU Meta Llama Hackathon
 
 ## 🧭 1. Project Description and Purpose
 
