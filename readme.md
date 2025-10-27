@@ -2,7 +2,7 @@
 
 ## 🧭 1. Project Description and Purpose
 
-**Oto Vize** is an AI-powered automation platform that modernizes the visa application process.
+**Otovize** is an AI-powered automation platform that modernizes the visa application process.
 It simplifies traditional, complex, and stressful visa procedures, allowing users to complete the entire process **in a single digital environment**, error-free and quickly.
 
 **Purpose:**
@@ -46,10 +46,23 @@ It simplifies traditional, complex, and stressful visa procedures, allowing user
    ```
 
 4. **Add environment variables (.env):**
-   ```env
-   FIREBASE_API_KEY=...
-   GCP_API_KEY=...
-   OLLAMA_MODEL=llama3
+
+   **Backend:**
+   ```bash
+   cd backend
+   cp .env.example .env
+   # Edit .env and add your actual API keys
+   ```
+
+   Required environment variables:
+   - `GROQ_API_KEY` - Get from https://console.groq.com/keys
+   - `SECRET_KEY` - Generate with: `python -c "import secrets; print(secrets.token_urlsafe(32))"`
+   - Firebase credentials (see `backend/.env.example` for details)
+
+   **Frontend:**
+   ```bash
+   cd frontend
+   # Add your Firebase config to .env if needed
    ```
 
 5. **Open the application in browser:**
