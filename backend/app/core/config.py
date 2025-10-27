@@ -26,10 +26,10 @@ class Settings(BaseSettings):
     port: int = 8000
     
     # OCR Configuration
-    groq_api_key: str = "***REMOVED***"
-    
+    groq_api_key: str = os.getenv("GROQ_API_KEY", "")
+
     # Security Settings
-    secret_key: str = "your-secret-key-here"
+    secret_key: str = os.getenv("SECRET_KEY", "your-secret-key-here")
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 30
     

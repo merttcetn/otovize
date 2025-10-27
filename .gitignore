@@ -1,3 +1,4 @@
+# Python virtual environments
 backend/venv
 backend/venv_new
 backend/app/__pycache__
@@ -5,3 +6,58 @@ backend/app/migrations
 backend/app/static
 backend/app/templates
 backend/app/wsgi.py
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+*.env
+backend/.env
+frontend/.env
+AI/.env
+
+# Firebase service account keys
+*firebase*.json
+*-adminsdk-*.json
+backend/visa-a05d3-firebase-adminsdk-fbsvc-f627f00882.json
+
+# API Keys and secrets
+*.pem
+*.key
+*.secret
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
