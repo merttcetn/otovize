@@ -122,19 +122,3 @@ AI detects risky or contradictory social media content that may conflict with th
 ![WhatsApp Görsel 2025-10-26 saat 11 31 31_b3b71f04](https://github.com/user-attachments/assets/906467a0-4d8d-4dcd-a6fb-5ba9375f32b8)
 
 # For technical readme files, please refer to frontend/readme, AI/readme, and backend/readme files.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Copyright (c) 2025 Otovize - Mert Cetin
-
-**What this means:**
-- ✅ You can use this code for learning and personal projects
-- ✅ You can modify and distribute the code
-- ✅ You must include the original copyright notice
-- ⚠️ The software is provided "as is" without warranty
-
-For commercial use or partnerships, please contact the team.
